@@ -35,9 +35,9 @@ with open('../test.json') as test_data:
 		tokenizedRecipe['ingredients'].sort()
 		tokenTest.append(tokenizedRecipe)
 
-with open('tokenData.json', 'w') as outfile:
+with open('cleanTokenData.json', 'w') as outfile:
 	json.dump(tokenized, outfile)
 
-with open('tokenTest.json', 'w') as outfile:
+with open('cleanTokenTest.json', 'w') as outfile:
 	json.dump(tokenTest, outfile)
 				
